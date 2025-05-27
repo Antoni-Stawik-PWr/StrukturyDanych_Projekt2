@@ -21,8 +21,7 @@ public:
         while (it != data.end() && it->priority <= priority) {
             ++it;
         }
-        data.insert(it, e); // wstaw w odpowiednie miejsce
-    }
+        data.insert(it, e);
 
     int pop() {
         if (data.empty()) throw std::runtime_error("Kolejka jest pusta!");
@@ -51,7 +50,7 @@ public:
     }
 
     void print() const {
-        std::cout << "Kolejka [wartoœæ(priorytet)]: ";
+        std::cout << "Kolejka [wartoÅ“Ã¦(priorytet)]: ";
         for (const auto& e : data) {
             std::cout << e.value << "(" << e.priority << ") -> ";
         }
